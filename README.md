@@ -9,8 +9,11 @@ The template includes three folders:
 
 To create a new project:
 - install `cookiecutter` with:
-        sudo pip install cookiecutter
+	```
+	sudo pip install cookiecutter
+	```
 - initialize your project folder with:
-        cookiecutter https://github.com/matthieu-bruneaux/cookiecutter-researchProject
-
+	```
+	cookiecutter https://github.com/matthieu-bruneaux/cookiecutter-researchProject
+	```
 This template is still being written. Use it at your own risks!
