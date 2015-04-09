@@ -2,10 +2,9 @@
     "full_name": "Matthieu Bruneaux",
     "email": "matthieu.bruneaux@gmail.com",
     "project_name": "Moomin population genetics",
-    "doc_author": "Matthieu Bruneaux",
-    "doc_name": "myResearchProject",
+    "project_dir": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}"
+    "doc_author": "{{ cookiecutter.full_name }}",
+    "doc_name": "{{ cookiecutter.project_name }}",
     "doc_www_dir": "~/work/lab_jyvaskyla/wwwpages",
-    "doc_www_publish_dir": "/html/collaborations/myResearchProject",
-
-    "_copy_without_render": "*documentation/docs-with-pelican/themes"
+    "doc_www_publish_dir": "/html/collaborations/{{ cookiecutter.project_dir }}"
 }

@@ -54,14 +54,16 @@ jyu-upload-doc: publish
 
 ### * Rules for secondary targets
 
-updateContent: $(ORG_HTML_REPORT_PAGE) \
+updateContent: createDirs $(ORG_HTML_REPORT_PAGE) \
   $(addprefix $(PELICAN_PAGES_DIR)/, $(HTML_PAGES_FILES)) \
   ./workflow/workflow.png
+	cp -r workflow $(PELICAN_RESOURCES_DIR)/
+	cp -r reports $(PELICAN_RESOURCES_DIR)/
+
+createDirs:
 	mkdir -p $(PELICAN_PAGES_DIR)
 	mkdir -p $(PELICAN_ARTICLES_DIR)
 	mkdir -p $(PELICAN_RESOURCES_DIR)
-	cp -r workflow $(PELICAN_RESOURCES_DIR)/
-	cp -r reports $(PELICAN_RESOURCES_DIR)/
 
 $(PELICAN_PAGES_DIR)/page-%.html: page-%.org
 	$(ORG2HTML_CMD) $<
