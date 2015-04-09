@@ -1,0 +1,59 @@
+/* Color scheme is taken from http://colorbrewer2.org/ and from the Zenburn
+theme by Jani Nurminen, ported to Emacs by Bozhidar Batsov (I took the color
+values from there) */
+
+/* To constrain node placement
+http://stackoverflow.com/questions/2476575/how-to-control-node-placement-in-graphviz-i-e-avoid-edge-crossings
+*/
+
+digraph G {
+
+        /* Graph attributes */
+	rankdir=TB; /* graph orientation from top to bottom */
+		
+        /* All nodes */
+	node[shape = box, style = filled];
+
+	/* Primary data nodes */
+	node[fillcolor = "#7cb8bb", penwidth = 2];
+
+	primaryDataNode[label = "Primary data"];
+	
+	aPDnode[label = "my primary data"];
+		
+	/* Derived data nodes */
+	node[fillcolor = "#f0dfaf", penwidth = 2];
+
+	derivedDataNode[label = "Data file"];
+		
+	aDDnode[label = "my derived data"];
+	
+	/* HTML report nodes */
+	node[fillcolor = "#8fb28f", penwidth = 1];
+
+	htmlReportNode[label = "HTML report"];
+		
+	aHRnode[label = "my html report"];
+		
+	/* Script nodes */
+	node[fillcolor = "#dca3a3", penwidth = 1];
+
+	scriptNode[label = "Script node"];
+
+	aSnode[label = "my script node"];
+				 
+        /* Edges */
+
+	primaryDataNode -> scriptNode -> derivedDataNode -> htmlReportNode [style=invis];
+	
+	subgraph cluster010 {
+		label = "my-first-module";
+		fillcolor = "#dcdccc";
+		style= "filled";
+
+		aPDnode -> aSnode -> aDDnode;
+		aSnode -> aHRnode;
+		
+        }
+
+}

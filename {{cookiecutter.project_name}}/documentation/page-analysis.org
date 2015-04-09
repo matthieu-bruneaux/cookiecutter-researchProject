@@ -1,0 +1,26 @@
+#+TITLE: Analysis
+#+URL: analyses-results.html
+#+Save_as: analyses-results.html
+#+Sortorder: 040
+#+OPTIONS: toc:1 num:nil html-postamble:nil
+
+* Pipeline summary
+
+** Firt module
+
+The first module does this and that.
+
+* Pipeline graphical overview
+
+#+CAPTION: Pipeline overview
+[[file:resources/workflow/workflow.png][file:resources/workflow/workflow-small.png]]
+
+* HTML reports
+
+#+INCLUDE: include-html-reports.org
+
+* Other detailed sections
+
+(Links to other pages)
+- [[file:page-analysis-extra-page-01.html][Extra page 1]]
+

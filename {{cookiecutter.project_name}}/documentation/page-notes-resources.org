@@ -1,0 +1,9 @@
+#+TITLE: Notes/Resources
+#+URL: notes-resources.html
+#+Save_as: notes-resources.html
+#+Sortorder: 030
+#+OPTIONS: toc:2 num:t html-postamble:nil
+
+* Some notes
+
+* Some resources

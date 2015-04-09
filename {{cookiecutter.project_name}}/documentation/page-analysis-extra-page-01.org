@@ -1,0 +1,7 @@
+#+Title: Tools installation
+#+URL: page-analysis-extra-page-01.html
+#+Save_as: page-analysis-extra-page-01.html
+#+Status: hidden
+#+OPTIONS: toc:2 num:t html-postamble:nil
+
+Some more details.
