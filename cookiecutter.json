@@ -6,5 +6,6 @@
     "doc_author": "{{ cookiecutter.full_name }}",
     "doc_name": "{{ cookiecutter.project_name }}",
     "doc_www_dir": "~/work/lab_jyvaskyla/wwwpages",
-    "doc_www_publish_dir": "/html/collaborations/{{ cookiecutter.project_dir }}"
+    "doc_www_publish_dir": "/html/collaborations/{{ cookiecutter.project_dir }}",
+    "www_dir_make_command": "make upload_JYU"
 }

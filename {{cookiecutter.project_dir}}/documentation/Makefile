@@ -8,8 +8,9 @@ PELICAN_OUTPUT_DIR=$(PELICAN_DIR)/output
 
 REPORTS_DIR=reports
 
-WWW_DIR=~/work/lab_jyvaskyla/wwwpages
-WWW_PUBLISH_DIR=$(WWWJYU_DIR)/html/collaborations/Ecoli-comparative-genomics
+WWW_DIR={{ cookiecutter.doc_www_dir }}
+WWW_PUBLISH_DIR=$(WWW_DIR){{ cookiecutter.doc_www_publish_dir }}
+WWW_DIR_MAKE_COMMAND={{ cookiecutter.www_dir_make_command }}
 
 ORG_HTML_REPORT_PAGE=include-html-reports.org
 ORG_PAGES_FILES=$(wildcard page-*.org)
@@ -46,11 +47,11 @@ clean:
 	rm -f include-html-reports.org
 	rm -f ./workflow/workflow.png
 
-jyu-upload-doc: publish
+upload-doc: publish
 	rm -fr $(WWW_PUBLISH_DIR)
 	mkdir $(WWW_PUBLISH_DIR)
 	cp -r $(PELICAN_OUTPUT_DIR)/* $(WWW_PUBLISH_DIR)/
-	cd $(WWW_DIR); make upload_JYU
+	cd $(WWW_DIR); $(WWW_DIR_MAKE_COMMAND)
 
 ### * Rules for secondary targets
 
