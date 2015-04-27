@@ -27,7 +27,7 @@ This is the documentation for the project "{{ cookiecutter.project_name }}".
 This project is version-controlled using Git. The collaborative Git repository
 can be cloned to your computer with:
 #+BEGIN_SRC 
-#git command
+#git command to put here
 #+END_SRC
 
 This will work seamlessly if your ssh key has been added to the collaborative
