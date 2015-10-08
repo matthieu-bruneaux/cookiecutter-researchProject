@@ -1,3 +1,5 @@
+.PHONY: help run report
+
 ### * Variables
 
 CURRENT_DIR=010-first-module

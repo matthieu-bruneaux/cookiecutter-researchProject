@@ -1,3 +1,5 @@
+.PHONY: help serve clean createDirs
+
 ### * Variables
 
 PELICAN_DIR=docs-with-pelican
