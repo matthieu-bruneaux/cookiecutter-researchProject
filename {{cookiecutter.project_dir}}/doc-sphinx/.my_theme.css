@@ -1,0 +1,38 @@
+
+/*
+http://stackoverflow.com/questions/23211695/modifying-sphinx-theme-read-the-docs
+https://github.com/snide/sphinx_rtd_theme/issues/117
+*/
+
+pre.ansi2html-content {
+  font-size: small;
+  overflow: auto;
+}
+   
+span.ansi34 {
+  color: #2980b9;
+}
+   
+span.ansi32 {
+    color: #22aa22;
+}
+
+span.ansi37 {
+  color: #4b4b4b;
+}
+   
+span.ansi33 {
+  color: darkorange;
+  font-weight: bold;
+}
+  
+span.ansi2 {
+    text-decoration: underline;
+  font-weight: bold;
+}
+
+/*
+#contents a, #contents a:hover, #contents a:active, #contents a:visited {
+			  color: #3091d1;
+		      }
+*/

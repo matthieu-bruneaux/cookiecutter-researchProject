@@ -1,0 +1,11 @@
+* Experiment 2
+
+** How to add links to other files (e.g. pdf)
+
+Links to pdf files or tables can be added like this:
+#+BEGIN_SRC 
+I want a link to a pdf:
+
+[[file:resources/myPdf.pdf][link to pdf file]]
+
+#+END_SRC

@@ -1,0 +1,28 @@
+* About
+
+Contact person: {{cookiecutter.full_name}} ({{cookiecutter.email}})
+
+** Status summary (updated on xxxx-xx-xx)
+
+*** Current status
+
+Lorem ipsum
+
+*** Next steps (TODO)
+
+Lorem ipsum
+
+** How to reproduce the project
+
+*** Get a copy of the project using Git
+
+Lorem ipsum
+
+*** Run the analysis and generate the documentation
+
+Lorem ipsum
+
+*** List of dependencies (not complete)
+
+- lorem
+- ipsum
