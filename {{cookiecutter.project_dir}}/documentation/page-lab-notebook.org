@@ -1,9 +1,0 @@
-#+TITLE: Lab notebook
-#+URL: lab-notebook.html
-#+Save_as: lab-notebook.html
-#+Sortorder: 070
-#+OPTIONS: toc:1 num:nil html-postamble:nil
-
-* [2015-02-12 Thu]
-- Create a new project
-

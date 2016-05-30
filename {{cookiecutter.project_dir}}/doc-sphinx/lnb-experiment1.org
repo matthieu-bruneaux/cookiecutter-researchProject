@@ -1,0 +1,16 @@
+* Experiment 1
+
+** How to add links to images
+
+Links to images can be added like this:
+#+BEGIN_SRC 
+I want a link to an image:
+
+[[images/myImage.png][images/myImage.png]]
+
+This will display a small image, and the original image can be accessed by 
+clicking on it.
+
+If I want a text link to an image, this can be done like
+[[images/myOtherImage.png][this]].
+#+END_SRC
